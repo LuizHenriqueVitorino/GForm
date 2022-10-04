@@ -14,10 +14,10 @@
 html {
     position: relative;
     background-color: #59BDB7;
-    background-image: url("https://i0.wp.com/multarte.com.br/wp-content/uploads/2020/05/nuvem-fundo-transparente9.png?fit=696%2C474&ssl=1");
+    /* background-image: url("https://i0.wp.com/multarte.com.br/wp-content/uploads/2020/05/nuvem-fundo-transparente9.png?fit=696%2C474&ssl=1");
     background-size: var(--largura-nuvem) var(--altura-nuvem);
     background-repeat: no-repeat;
-    animation: nuvem 50s infinite;
+    animation: nuvem 50s infinite; */
     
 }
 main {
@@ -33,14 +33,13 @@ main {
     flex-direction: column;
     margin-top: 200px;
     background-color: #ECECEC;
-    /* opacity: 0.5; */
     visibility: 50%;
     border-radius: 5px;
     height: 40%;
     min-height: 300px;
     width: 50%;
     max-width: 400px;
-    min-width: 250px;
+    min-width:300px;
     padding: 10px;
     text-align: center;
     align-items: center;
@@ -48,7 +47,7 @@ main {
 #input {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin-top: 30px;
     text-align: left;
 }
@@ -64,7 +63,7 @@ main {
 #botoes{
     display: flex;
     margin-top: 20px;
-    width: 70%;
+    width: 80%;
     justify-content: space-between; 
 }
 .botao{
@@ -76,6 +75,10 @@ main {
     font-size: 15px;
     border: none;
     border-radius: 5px;
+}
+.botao:hover{
+    font-size: 18px;
+    cursor: pointer;
 }
 #esqueceu-senha{
     position: absolute;
@@ -89,12 +92,16 @@ a{
     color: black;
 }
 
-@keyframes nuvem {
+/* @keyframes nuvem {
     0%{
         background-position: calc(0% - var(--largura-nuvem)) 0%;
     }
     100%{
         background-position: calc(100% + var(--largura-nuvem));
     }
+    
+} */
+
+@media screen and (min-width: 600px){
     
 }
